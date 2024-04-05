@@ -1,6 +1,8 @@
 module Library where
 import PdePreludat
 
+-- Enunciado Parte 1
+
 totalEmpleados :: Number -> String -> Number
 totalEmpleados cantidadSucursales nombreEmpresa = cantidadEmpleadosPorSucursal nombreEmpresa * cantidadSucursales
 
@@ -35,3 +37,16 @@ cantidadEmpleadosPorSucursal nombreEmpresa --Guardas
     | otherwise = 0
 
 --Tarea: Implementar funciones, y la condicion que falta (esMultiploDe)
+
+
+
+
+
+
+
+
+
+-- Enunciado Parte 2 - "esBisiesto"
+
+esBisiesto :: Number -> Bool
+esBisiesto anio = ((rem anio 400) == 0 || (((rem anio 4) == 0) && (not ((rem anio 100) == 0))))
